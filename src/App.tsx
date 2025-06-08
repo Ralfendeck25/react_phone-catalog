@@ -1,6 +1,3 @@
-import React from 'react';
-import MyComponent from './components/MyComponent';
-import LanguageSwitcher from './components/LanguageSwitcher';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import './App.scss';
 import { FavouritesProvider } from './modules/shared/context/FavouritesContext';
@@ -9,13 +6,14 @@ import { Favorites } from './modules/Favourites/Favorites';
 import { useProducts } from './modules/shared/context/ProductsContext';
 import { GadgetPage } from './modules/GadgetPage/GadgetPage';
 import { ScrollToTop } from './modules/shared/ScrollToTop';
-// eslint-disable-next-line max-len
 import { ProductDetailsPage } from './modules/ProductDetailsPage/ProductDetailsPage';
 import { Menu } from './modules/HomePage/components/Menu';
 import { CartPage } from './modules/CartPage/CartPage';
 import { CartProvider } from './modules/shared/context/CartContext';
 import { NotFoundPage } from './modules/NotFoundPage/NotFoundPage';
 import { ThemeProvider } from './modules/shared/context/ThemeContext';
+import LanguageSwitcher from './components/LanguageSwitcher';
+import MyComponent from './components/MyComponent';
 import './i18n';
 
 export const App = () => {
@@ -26,6 +24,7 @@ export const App = () => {
       <FavouritesProvider>
         <CartProvider>
           <ScrollToTop />
+          <LanguageSwitcher />
           <div className="App">
             <Routes>
               <Route path="/" element={<HomePage />} />
@@ -70,6 +69,7 @@ export const App = () => {
               <Route path="*" element={<NotFoundPage />} />
             </Routes>
           </div>
+          <MyComponent />
         </CartProvider>
       </FavouritesProvider>
     </ThemeProvider>

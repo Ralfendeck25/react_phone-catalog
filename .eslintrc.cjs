@@ -38,6 +38,11 @@ module.exports = {
   ],
   rules: {
     // JS
+    '@typescript-eslint/no-unused-vars': ['error', {
+    argsIgnorePattern: '^_',
+    varsIgnorePattern: '^_',
+    caughtErrorsIgnorePattern: '^_'
+  }],
     'import/extensions': [
       'error',
       'ignorePackages',
@@ -55,6 +60,7 @@ module.exports = {
     'max-len': [
       'error',
       {
+        code: 100,
         ignoreTemplateLiterals: true,
         ignoreComments: true,
       },
@@ -91,7 +97,6 @@ module.exports = {
     'react/require-default-props': 0,
     'import/prefer-default-export': 0,
     'standard/no-callback-literal': 0,
-    'react/jsx-filename-extension': [1, { extensions: ['.tsx'] }],
     'react/destructuring-assignment': 0,
     'react/jsx-props-no-spreading': 0,
     'react/state-in-constructor': [2, 'never'],
@@ -118,7 +123,6 @@ module.exports = {
     // Typescript
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
-    '@typescript-eslint/no-unused-vars': ['error'],
     '@typescript-eslint/indent': ['error', 2],
     '@typescript-eslint/ban-types': [
       'error',
@@ -129,9 +133,7 @@ module.exports = {
         },
       },
     ],
-  },
-  ignorePatterns: [
-    'dist',
+  },  ignorePatterns: [    'dist',
     '.eslintrc.cjs',
     'vite.config.ts',
     'src/vite-env.d.ts',
