@@ -1,7 +1,13 @@
-import './App.scss';
+import React from 'react';
+import MyComponent from './components/MyComponent';
+import LanguageSwitcher from './components/LanguageSwitcher';
+function App() {
+  return (
+    <div>
+      <LanguageSwitcher />
+      <MyComponent />
+    </div>
+  );
+}
 
-export const App = () => (
-  <div className="App">
-    <h1>Product Catalog</h1>
-  </div>
-);
+export default App;

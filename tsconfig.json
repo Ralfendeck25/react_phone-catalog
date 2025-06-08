@@ -1,7 +1,10 @@
 {
   "extends": "@mate-academy/students-ts-config",
   "include": [
-    "src"
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.js", // Opcional, se você tiver arquivos JS
+    "src/**/*.jsx" // Opcional, se você tiver arquivos JSX
   ],
   "compilerOptions": {
     "sourceMap": false,
