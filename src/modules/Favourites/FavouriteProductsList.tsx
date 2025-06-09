@@ -24,7 +24,7 @@ export const FavouriteProductsList = () => {
             src={
               theme === 'light'
                 ? 'icons/home.svg'
-                : './icons/home-dark-theme.svg'
+                : '/icons/home-dark-theme.svg'
             }
             alt="Back home"
           />
