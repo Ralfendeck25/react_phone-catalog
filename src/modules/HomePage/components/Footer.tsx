@@ -18,7 +18,7 @@ export const Footer = () => {
         <img
           className={style.logo__image}
           src={
-            theme === 'light' ? './logo/Logo.svg' : './logo/Logo-dark-theme.svg'
+            theme === 'light' ? '/logo/Logo.svg' : '/logo/Logo-dark-theme.svg'
           }
         />
       </div>
@@ -48,8 +48,8 @@ export const Footer = () => {
           <img
             src={
               theme === 'light'
-                ? './icons/arrow-up.svg'
-                : './icons/arrow-up-dark-theme.svg'
+                ? '/icons/arrow-up.svg'
+                : '/icons/arrow-up-dark-theme.svg'
             }
             alt="Up"
           />
