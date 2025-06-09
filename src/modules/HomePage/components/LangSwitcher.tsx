@@ -9,14 +9,14 @@ export const LanguageSwitcher: React.FC = () => {
   const currentLanguage = i18n.language;
 
   const handleLanguageChange = () => {
-    const nextLanguage = currentLanguage === 'en' ? 'ua' : 'en';
+    const nextLanguage = currentLanguage === 'en' ? 'fr' : 'en';
 
     i18n.changeLanguage(nextLanguage);
   };
 
   return (
     <button onClick={handleLanguageChange} className={style.langSwitcher}>
-      {currentLanguage === 'en' ? 'UA' : 'EN'}
+      {currentLanguage === 'en' ? 'FR' : 'EN'}
     </button>
   );
 };
