@@ -29,7 +29,7 @@ export const Footer = () => {
               <a
                 href={
                   item === 'github'
-                    ? 'https://github.com/ralfendeck25/react_phone-catalog'
+                    ? 'https://github.com/ralfendeck25/react_phone-catalog/'
                     : '/'
                 }
                 target={item === 'github' ? '_blank' : '_self'}
