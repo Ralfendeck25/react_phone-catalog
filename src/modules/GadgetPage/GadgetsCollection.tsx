@@ -115,13 +115,13 @@ export const GadgetsCollection: React.FC<Props> = ({
           <img
             src={
               theme === 'light'
-                ? './icons/home.svg'
-                : './icons/home-dark-theme.svg'
+                ? '/icons/home.svg'
+                : '/icons/home-dark-theme.svg'
             }
             alt="Back home"
           />
         </Link>
-        <img src="./icons/arrow-right.svg" alt="Gadgets" />
+        <img src="/icons/arrow-right.svg" alt="Gadgets" />
         <span className={style.collection__name}>
           {t(`categories.${category.toLowerCase()}`)}
         </span>
@@ -166,7 +166,7 @@ export const GadgetsCollection: React.FC<Props> = ({
           >
             <img
               className={style.pagination__arrow}
-              src="./icons/arrow-left.svg"
+              src="/icons/arrow-left.svg"
               alt="Back"
             />
           </button>
@@ -178,7 +178,7 @@ export const GadgetsCollection: React.FC<Props> = ({
           >
             <img
               className={style.pagination__arrow}
-              src="./icons/arrow-right.svg"
+              src="/icons/arrow-right.svg"
               alt="Next"
             />
           </button>
