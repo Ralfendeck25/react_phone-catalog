@@ -1,6 +1,6 @@
 {
   "name": "react_phone-catalog",
-  "homepage": "Gadgetry",
+  "homepage": "https://ralfendeck25.github.io/react_phone-catalog/",
   "version": "0.1.0",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.2",
