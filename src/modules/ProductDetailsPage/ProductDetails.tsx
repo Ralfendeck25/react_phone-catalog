@@ -66,25 +66,25 @@ export const ProductDetails = () => {
           <img
             src={
               theme === 'light'
-                ? './icons/home.svg'
-                : './icons/home-dark-theme.svg'
+                ? '/icons/home.svg'
+                : '/icons/home-dark-theme.svg'
             }
             alt="Home"
           />
         </Link>
-        <img src="./icons/arrow-right.svg" alt="Right" />
+        <img src="/icons/arrow-right.svg" alt="Right" />
         <Link
           to={`/${product?.category}`}
           className={style.breadcrumbs__category}
         >
           <span>{t(`categories.${product?.category}`)}</span>
         </Link>
-        <img src="./icons/arrow-right.svg" alt="Right" />
+        <img src="/icons/arrow-right.svg" alt="Right" />
         <span className={style.breadcrumbs__name}>{product?.name}</span>
       </div>
       <div className={style.back}>
         <div className={style.back__image}>
-          <img src="./icons/arrow-left.svg" alt="Back" />
+          <img src="/icons/arrow-left.svg" alt="Back" />
         </div>
         <span className={style.back__word} onClick={() => navigate(-1)}>
           {t('back')}
@@ -139,8 +139,8 @@ export const ProductDetails = () => {
                   favourites.includes(product!.id)
                     ? 'icons/heart-red.svg'
                     : theme === 'light'
-                      ? './icons/heart.svg'
-                      : './icons/heart-dark-theme.svg'
+                      ? '/icons/heart.svg'
+                      : '/icons/heart-dark-theme.svg'
                 }
                 alt="Like"
               />
